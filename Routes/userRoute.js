@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import User from '../models/userModel.js';
 import express from 'express';
 import bcrypt from 'bcryptjs';
@@ -39,3 +40,9 @@ userRoute.post('/signin', async (req, res) => {
   res.status(401).send({ message: 'Invalid email or password' });
 });
 export default userRoute;
+=======
+import User from '../models/userModel';
+import express from 'express';
+import bcrypt from 'bcryptjs';
+import expressAsyncHandler from 'express-async-handler';
+>>>>>>> 650f3325a1f0daee297d2e0a313c4403dff36ef6

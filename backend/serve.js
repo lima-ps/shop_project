@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/users', userRoute);
 app.use('/api/products', productRoute);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3306;
 app.listen(port, () => {
   console.log(`listening in http://localhost:${port}`);
 });

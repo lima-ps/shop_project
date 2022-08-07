@@ -8,6 +8,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 //screens
 import HomeView from './views/HomeView';
+import CartView from './views/CartView';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                 Shop-Project
               </Navbar.Brand>
               <Nav>
+                <Nav.Link href="/cart">Cart</Nav.Link>
                 <Nav.Link href="#pricing">Login</Nav.Link>
               </Nav>
             </Container>
@@ -36,6 +38,7 @@ function App() {
           <Container className="mt-3">
             <Routes>
               <Route path="/" element={<HomeView />}></Route>
+              <Route path="/cart" element={<CartView />}></Route>
             </Routes>
           </Container>
         </main>
